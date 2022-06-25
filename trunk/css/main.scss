@@ -1,0 +1,169 @@
+@import "variables";
+@import "mixins";
+
+
+@include fancy-links;
+/**
+*{
+    padding: 0;
+    margin: 0;
+}
+**/ 
+body {
+    font-family: $text-font;
+    color: $text-colour;
+
+    main {
+        width: $content-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: $header-font;
+    }
+    h1{
+        @include box;
+        height: $header-height;
+        background-color: $table-colour4;
+    }
+
+    a {
+        color: $link-colour;
+    }
+}
+
+/*
+**** BASIC STYLING ****
+*/
+.textIndent {
+    text-indent: 15px;
+}
+
+.warning {
+    @include warning;
+}
+.calculation{
+    @include calculation;
+}
+
+/*
+**** TABLES ****
+*/
+table {
+    table-layout: fixed;
+    width: 80%;
+    border: 2px solid $table-colour-border;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.5em;
+    border-collapse: collapse;
+
+    th {
+        letter-spacing: 3px;
+        background-color: $table-colour-header;
+        font-size: larger;
+    }
+    th:nth-child(1),
+    th:nth-child(2) {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    td {
+        letter-spacing: 1px;
+    }
+
+    .cell-bottom-border {
+        border-bottom: solid 2px $table-cell-bottom-border;
+    }
+}
+
+/* TABLE 1 */
+.table1 {
+    th:nth-child(1) {
+        width: 3%;
+    }
+
+    th:nth-child(2) {
+        width: 87%;
+    }
+
+    th:nth-child(3) {
+        width: 5%;
+    }
+
+    th:nth-child(4) {
+        width: 5%;
+    }
+
+    td:nth-child(2) {
+        padding-left: 20px;
+    }
+
+    td:nth-child(3) {
+        text-align: center;
+    }
+
+    td.dark-gray {
+        background-color: $table-colour1;
+    }
+
+    td.light-gray {
+        background-color: $table-colour2;
+    }
+
+    td.steel-blue {
+        background-color: $table-colour3;
+    }
+
+    td.light-steel-blue {
+        background-color: $table-colour4;
+    }
+
+    td.orange-red {
+        background-color: $table-colour5;
+    }
+
+    tr.custom-height {
+        height: 20px;
+    }
+}
+
+/* TABLE 2 */
+.table2,
+.table3 {
+    td:nth-child(1) {
+        padding-left: 20px;
+    }
+
+    td:nth-child(2),
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5) {
+        text-align: center;
+    }
+
+    td:nth-child(3),
+    td:nth-child(4),
+    td:nth-child(5) {
+        color: $table-colour-text;
+    }
+}
+
+/* TABLE 3*/
+.table3{
+    td:nth-child(2),
+    td:nth-child(3) {
+        text-align: left;
+    }
+    th:nth-child(2){
+        padding-left: 0;
+    }
+    th:nth-child(3) {
+        text-align: left;
+    }
+}

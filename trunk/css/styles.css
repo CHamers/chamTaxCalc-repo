@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=EB+Garamond&family=Open+Sans&display=swap');
+
+html {
+  font-family: 'EB Garamond', serif;
+}
+
+/*
+**** BASIC STYLING ****
+*/
+.textIndent {
+  text-indent: 15px;
+}
+
+.background--bisque {
+  background-color: bisque;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Helvetica, sans-serif;
+}
+
+/* TABLES */
+td {
+  letter-spacing: 1px;
+}
+.cell-bottom-border {
+  border-bottom: solid 2px darkslategray;
+}
+table {
+  table-layout: fixed;
+  width: 80%;
+  border-collapse: collapse;
+  border: 2px solid lightslategrey;
+  color: darkslategray;
+  font-family: 'Dongle', sans-serif;
+  font-size: 1.5em;
+}
+.table__head {
+  letter-spacing: 3px;
+  background-color: azure;
+}
+
+/* TABLE 1 */
+.table--1__head th:nth-child(1) {
+  width: 3%;
+}
+
+.table--1__head th:nth-child(2) {
+  width: 87%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.table--1__head th:nth-child(3) {
+  width: 5%;
+}
+
+.table--1__head th:nth-child(4) {
+  width: 5%;
+}
+.table--1__body td:nth-child(2){
+  padding-left: 20px;
+}
+.table--1__body td:nth-child(3) {
+  text-align: center;
+}
+
+.table--1__body td.dark-gray {
+  background-color: darkgray;
+}
+
+.table--1__body td.light-gray {
+  background-color: lightgray;
+}
+
+.table--1__body td.steel-blue {
+  background-color: steelblue;
+}
+
+.table--1__body td.light-steel-blue {
+  background-color: lightsteelblue;
+}
+
+.table--1__body td.orange-red {
+  background-color: orangered;
+}
+
+.table--1__body tr.custom-height {
+  height: 20px;
+}
+
+/* TABLE 2 */
+.table--2__body td:nth-child(1){
+  padding-left: 20px;
+}
+.table--2__body td:nth-child(2),
+.table--2__body td:nth-child(3),
+.table--2__body td:nth-child(4),
+.table--2__body td:nth-child(5){
+  text-align: center;
+}
+.table--2__body td:nth-child(3),
+.table--2__body td:nth-child(4),
+.table--2__body td:nth-child(5){
+  color:gray;
+ 
+}

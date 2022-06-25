@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=EB+Garamond&family=Open+Sans&display=swap');
+
+// *** FONTS ***
+$text-font: 'EB Garamond', serif;
+$header-font: Helvetica,
+sans-serif;
+// *** SIZES ***
+$content-width:min(100% - 1rem);
+$header-height:60px;
+$footer-height:90px;
+// *** COLOURS ***
+$text-colour: #222;
+$highlight-colour1:rgb(255, 228, 196);
+$highlight-colour2:rgb(0, 255, 21);
+$link-colour:#f27731;
+
+
+$table-colour-text: rgb(128, 128, 128);
+$table-colour-header:rgb(240, 255, 255);
+$table-colour-border:rgb(119, 136, 153);
+$table-cell-bottom-border: rgb(47,79,79);
+$table-colour1:rgb(169, 169, 169);
+$table-colour2:rgb(211, 211, 211);
+$table-colour3:rgb(70, 130, 180);
+$table-colour4:rgb(176, 196, 222);
+$table-colour5:rgb(265, 69, 0);

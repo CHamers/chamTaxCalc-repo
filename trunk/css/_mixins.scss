@@ -1,0 +1,22 @@
+@mixin warning{
+    background-color: $highlight-colour1;
+    color: $text-colour;
+}
+@mixin calculation{
+    background-color: $highlight-colour2;
+    color: $text-colour;
+}
+@mixin rounded {
+    border-radius: 6px;
+}
+@mixin box{
+    @include rounded;
+    border: 3px solid #333;
+    padding: 1%;
+}
+@mixin fancy-links {
+    a{
+        font-style: italic;
+        text-decoration: none;
+    }
+}
